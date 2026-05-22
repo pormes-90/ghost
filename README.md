@@ -1,51 +1,45 @@
-👻 GHOST SCANNER v4.0 "PHANTOM"
+👻 GHOST SCANNER v1.0 "PHANTOM"
 
 "You cannot detect what does not exist"
 
 Pure Stealth Network Scanner - The most undetectable network reconnaissance tool ever created.
 
-https://img.shields.io/badge/version-4.0-cyan.svg
-https://img.shields.io/badge/codename-PHANTOM-cyan.svg
-https://img.shields.io/badge/stealth-99.99%25-cyan.svg
-https://img.shields.io/badge/detection%20risk-0.0001%25-cyan.svg
-https://img.shields.io/badge/license-Shadow%20License-black.svg
-
 ---
 
-📖 TABLE OF CONTENTS
+📖 DAFTAR ISI
 
-· Overview
-· Why Ghost?
-· Features
-· Architecture
-· Workflow
-· Installation
-· Usage
-· Modules
-· Comparison
-· Detection Evasion
-· FAQ
-· Disclaimer
+1. Overview
+2. Why Ghost?
+3. Features
+4. Architecture
+5. Workflow / Alur Kerja
+6. Installation
+7. Usage
+8. Modules
+9. Comparison
+10. Detection Evasion
+11. FAQ
+12. Disclaimer
 
 ---
 
 🔭 OVERVIEW
 
-GHOST SCANNER v4.0 "PHANTOM" is not just a network scanner - it's a stealth reconnaissance framework designed for operations where absolute invisibility is mandatory.
+GHOST SCANNER v4.0 "PHANTOM" bukan sekadar network scanner biasa - ini adalah stealth reconnaissance framework yang dirancang untuk operasi dimana ketidak-terdeteksian absolut adalah keharusan.
 
-Unlike traditional scanners that flood networks with detectable packets, GHOST employs 13 unique evasion techniques that make it virtually impossible to detect by IDS/IPS, firewalls, or network monitoring tools.
+Berbeda dengan scanner tradisional yang membanjiri jaringan dengan paket yang mudah terdeteksi, GHOST menggunakan 13 teknik evasion unik yang membuatnya hampir mustahil dideteksi oleh IDS/IPS, firewall, atau alat monitoring jaringan manapun.
 
-Key Metrics
+Metrik Utama
 
 ```
 ╔══════════════════════════════════════════════════════════╗
-║  Detection Probability  : 0.0001%                       ║
-║  Stealth Techniques     : 13 (Unique)                   ║
-║  Scan Modes             : 5 (Ghost/Phantom/Shadow/      ║
-║                              Spirit/Custom)             ║
-║  Passive Discovery      : 100% (Zero packets)           ║
-║  Active Evasion         : 99.99% (Polymorphic)          ║
-║  Footprint              : NONE (Auto-erased)            ║
+║  Probabilitas Deteksi   : 0.0001%                      ║
+║  Teknik Stealth         : 13 (Unique)                  ║
+║  Mode Scan              : 5 (Ghost/Phantom/Shadow/     ║
+║                              Spirit/Custom)            ║
+║  Passive Discovery      : 100% (Zero packets)          ║
+║  Active Evasion         : 99.99% (Polymorphic)         ║
+║  Jejak / Footprint      : NONE (Auto-erased)           ║
 ╚══════════════════════════════════════════════════════════╝
 ```
 
@@ -53,33 +47,33 @@ Key Metrics
 
 💎 WHY GHOST?
 
-The Problem with Traditional Scanners
+Masalah dengan Scanner Tradisional
 
 ```
 ┌─────────────────────────────────────────────────────────┐
-│  TRADITIONAL SCANNERS (Nmap, Masscan, etc.)              │
+│  SCANNER TRADISIONAL (Nmap, Masscan, dll)                │
 ├─────────────────────────────────────────────────────────┤
-│  ❌ Fixed packet signatures → Easily detected            │
-│  ❌ High packet rates → Triggers IDS alerts              │
-│  ❌ Sequential scanning → Predictable patterns            │
-│  ❌ Banner grabbing → Leaves evidence                    │
-│  ❌ Static source IP → Traceable                         │
-│  ❌ No evasion techniques → Blocked by firewalls         │
-│  ❌ Single protocol → Limited access                     │
-│  ❌ Save logs → Evidence exists                          │
+│  ❌ Fixed packet signatures → Mudah terdeteksi           │
+│  ❌ High packet rates → Trigger IDS alerts               │
+│  ❌ Sequential scanning → Pola terprediksi               │
+│  ❌ Banner grabbing → Meninggalkan bukti                 │
+│  ❌ Static source IP → Bisa dilacak                     │
+│  ❌ No evasion techniques → Diblokir firewall            │
+│  ❌ Single protocol → Akses terbatas                     │
+│  ❌ Save logs → Bukti tersimpan                         │
 └─────────────────────────────────────────────────────────┘
 
 ┌─────────────────────────────────────────────────────────┐
 │  GHOST SCANNER                                           │
 ├─────────────────────────────────────────────────────────┤
-│  ✅ Polymorphic packets → No fixed signature             │
-│  ✅ Random delays → Blends with normal traffic           │
-│  ✅ Chaotic scan order → No predictable pattern          │
-│  ✅ Zero banner grabbing → No evidence                   │
-│  ✅ Decoy IPs + MAC spoofing → Untraceable               │
-│  ✅ 13 evasion layers → Bypasses most defenses           │
-│  ✅ Multi-protocol → Adaptive access                     │
-│  ✅ Zero logging → No trace exists                       │
+│  ✅ Polymorphic packets → Tidak ada signature tetap      │
+│  ✅ Random delays → Menyatu dengan traffic normal        │
+│  ✅ Chaotic scan order → Tidak ada pola terprediksi      │
+│  ✅ Zero banner grabbing → Tidak ada bukti               │
+│  ✅ Decoy IPs + MAC spoofing → Tidak bisa dilacak        │
+│  ✅ 13 evasion layers → Melewati hampir semua pertahanan │
+│  ✅ Multi-protocol → Akses adaptif                       │
+│  ✅ Zero logging → Tidak ada jejak                       │
 └─────────────────────────────────────────────────────────┘
 ```
 
@@ -87,11 +81,11 @@ The Problem with Traditional Scanners
 
 🎯 FEATURES
 
-Core Features (13 Modules)
+13 Modul Utama
 
 ```
 ╔══════════════════════════════════════════════════════════════╗
-║  #   MODULE                    TYPE         DETECTION       ║
+║  #   MODUL                     TYPE         DETEKSI         ║
 ╠══════════════════════════════════════════════════════════════╣
 ║  1   Quantum Noise Generator   Active       Impossible      ║
 ║  2   Dimensional Shift         Active       Impossible      ║
@@ -108,112 +102,6 @@ Core Features (13 Modules)
 ║  13  Multiverse Scan           Distributed  Nearly Untraceable║
 ╚══════════════════════════════════════════════════════════════╝
 ```
-
-Feature Details
-
-1. 🔮 QUANTUM NOISE GENERATOR
-
-Generates massive amounts of random fake traffic to confuse IDS/IPS systems. Your real scan packets are lost in a sea of noise.
-
-· Noise Level: Extreme (47+ decoys/second)
-· Targets: 5 random network ranges
-· Protocols: TCP, UDP, ICMP (randomized)
-
-2. 🌌 DIMENSIONAL SHIFT
-
-Changes scanner identity every 10 seconds. MAC address, TTL, OS fingerprint, and source ports all rotate.
-
-· Identities: 10+ different device profiles
-· Rotation: Auto-shift every 10 seconds
-· Profiles: Linux, Windows, macOS, Cisco, Android, IoT
-
-3. 🧬 DNA CLONING
-
-Extracts and clones the DNA fingerprint of legitimate network devices. Your scanner becomes indistinguishable from real devices.
-
-· Clone Sources: Random devices on network
-· Cloned Attributes: MAC, TTL, OS, Window Size, TCP Options
-· Clone Pool: 5+ simultaneous clones
-
-4. 🌊 GHOST FLOOD
-
-Creates 500+ phantom devices on the network. Real targets are hidden among hundreds of fake devices.
-
-· Phantom Count: 100-500 devices
-· Phantom Types: Workstations, Servers, IoT, Mobile
-· Announcements: Gratuitous ARP broadcasts
-
-5. 🎭 MIRROR MODE
-
-Reflects scans through innocent third-party hosts. The target sees attacks coming from the mirror, not from you.
-
-· Mirror Hosts: Auto-discovered on network
-· Reflection: Spoofed source IPs
-· Traceability: Leads to mirror host, not you
-
-6. 🕳️ WORMHOLE TUNNEL
-
-Exfiltrates scan results through covert channels in normal protocols. Data looks like regular DNS/HTTP/NTP traffic.
-
-· Protocols: DNS, HTTP, HTTPS, NTP, ICMP, DHCP
-· Encoding: AES-256 + Base64
-· Detection: Indistinguishable from normal traffic
-
-7. 🔮 PRECOGNITION ENGINE
-
-Predicts network topology before scanning. Optimizes scan order to target high-value devices first.
-
-· Predictions: Gateway, Servers, Workstations, IoT
-· Accuracy: 85-95% for common networks
-· Optimization: 50% fewer packets needed
-
-8. 🌑 VOID WALKER
-
-Inserts scan packets into gaps between legitimate traffic. Your packets ride alongside normal network activity.
-
-· Analysis: Traffic pattern monitoring
-· Insertion: Packets hidden in inter-packet gaps
-· Timing: Synchronized with network rhythm
-
-9. 🧠 NEURAL CAMOUFLAGE
-
-AI-based adaptive camouflage that learns from network responses and evolves to avoid detection.
-
-· Learning: Real-time adaptation
-· Evolution: Pattern mutation every scan
-· Success Rate: 99.99% undetected
-
-10. ✨ STARDUST PROTOCOL
-
-Fragments scan packets into 16 microscopic pieces sent from different source ports. IDS sees random noise, target reassembles.
-
-· Fragments: 8-16 micro-pieces
-· Ports: Different source port per fragment
-· Reassembly: Only possible at target
-
-11. 📡 ECHO LOCATOR 2.0
-
-100% passive device discovery. Listens to ARP, DHCP, mDNS, SSDP broadcasts without sending a single packet.
-
-· Methods: ARP, DHCP, mDNS, SSDP, NetBIOS
-· Packets Sent: ZERO
-· Detection Risk: 0% (completely passive)
-
-12. 🎯 PARADOX SCAN
-
-Sends contradictory packets that confuse firewalls. Impossible flag combinations that bypass rule-based filters.
-
-· Paradox Types: SYN+RST, ACK without SYN, FIN+SYN
-· Confusion: Firewall can't classify
-· Bypass Rate: 70-90% of stateless firewalls
-
-13. 🌐 MULTIVERSE SCAN
-
-Scans from 5 different "universes" simultaneously - Tor, VPN, Proxy, Direct, Zombie. Target sees attacks from everywhere.
-
-· Universes: 5 parallel scan paths
-· Distribution: Ports split across universes
-· Traceability: Requires tracing 5 paths simultaneously
 
 ---
 
@@ -281,12 +169,12 @@ Complete Scan Flow
 ```
 START
   │
-  ├─► [1] BANNER DISPLAY
-  │   └─► Show Ghost identity
-  │   └─► Display session ID
-  │   └─► Confirm stealth mode
+  ├─► [1] TAMPILAN BANNER
+  │   └─► Tampilkan identitas Ghost
+  │   └─► Tampilkan session ID
+  │   └─► Konfirmasi stealth mode
   │
-  ├─► [2] MODULE INITIALIZATION
+  ├─► [2] INISIALISASI MODUL
   │   ├─► Quantum Noise Generator     → LOADED
   │   ├─► Dimensional Shift          → LOADED
   │   ├─► DNA Cloning Engine         → LOADED
@@ -300,98 +188,98 @@ START
   │   ├─► Echo Locator 2.0           → LOADED
   │   ├─► Paradox Scan               → LOADED
   │   └─► Multiverse Scan            → LOADED
-  │   └─► Status: 13/13 Modules Ready
+  │   └─► Status: 13/13 Modul Siap
   │
-  ├─► [3] STEALTH ACTIVATION
-  │   ├─► Start Quantum Noise Storm
-  │   │   ├─► Generate 47+ decoy packets/sec
-  │   │   ├─► Target 5 random networks
-  │   │   └─► Flood IDS with false positives
+  ├─► [3] AKTIVASI STEALTH
+  │   ├─► Mulai Quantum Noise Storm
+  │   │   ├─► Generate 47+ decoy packets/detik
+  │   │   ├─► Target 5 network random
+  │   │   └─► Banjiri IDS dengan false positives
   │   │
-  │   ├─► Execute Dimensional Shift
-  │   │   ├─► Generate random identity
+  │   ├─► Eksekusi Dimensional Shift
+  │   │   ├─► Generate identitas random
   │   │   ├─► Spoof MAC address
   │   │   ├─► Set TTL fingerprint
-  │   │   └─► Rotate source ports
+  │   │   └─► Rotasi source ports
   │   │
   │   ├─► Clone Device DNA
-  │   │   ├─► Extract DNA from 5 random hosts
+  │   │   ├─► Ekstrak DNA dari 5 host random
   │   │   ├─► Clone MAC addresses
-  │   │   ├─► Mimic TCP window sizes
+  │   │   ├─► Tiru TCP window sizes
   │   │   └─► Copy OS fingerprints
   │   │
-  │   └─► Launch Ghost Flood
-  │       ├─► Create 500 phantom devices
+  │   └─► Luncurkan Ghost Flood
+  │       ├─► Buat 500 phantom devices
   │       ├─► Announce via Gratuitous ARP
-  │       └─► Hide real devices in noise
-  │   └─► Detection Probability: 0.0001%
+  │       └─► Sembunyikan device asli dalam noise
+  │   └─► Probabilitas Deteksi: 0.0001%
   │
   ├─► [4] TARGET ACQUISITION
-  │   ├─► Auto-detect local network
-  │   ├─► Calculate subnet range
+  │   ├─► Auto-deteksi network lokal
+  │   ├─► Kalkulasi subnet range
   │   └─► Generate target IP list
   │
-  ├─► [5] PHASE 1: PASSIVE DISCOVERY
-  │   ├─► Echo Locator 2.0 Activated
-  │   ├─► Listen ARP broadcasts (60s)
-  │   │   └─► Capture who-has announcements
-  │   ├─► Listen DHCP traffic (60s)
-  │   │   └─► Extract lease information
-  │   ├─► Listen mDNS (60s)
-  │   │   └─► Capture Apple/Chromecast
-  │   ├─► Listen SSDP (60s)
-  │   │   └─► Capture UPnP announcements
-  │   └─► Packets Sent: ZERO
-  │   └─► Hosts Discovered: N (passive)
+  ├─► [5] FASE 1: PASSIVE DISCOVERY
+  │   ├─► Echo Locator 2.0 Diaktifkan
+  │   ├─► Dengarkan ARP broadcasts (60 detik)
+  │   │   └─► Tangkap who-has announcements
+  │   ├─► Dengarkan DHCP traffic (60 detik)
+  │   │   └─► Ekstrak informasi lease
+  │   ├─► Dengarkan mDNS (60 detik)
+  │   │   └─► Tangkap Apple/Chromecast
+  │   ├─► Dengarkan SSDP (60 detik)
+  │   │   └─► Tangkap UPnP announcements
+  │   └─► Paket Dikirim: NOL
+  │   └─► Host Ditemukan: N (passive)
   │
-  ├─► [6] PHASE 2: PRECOGNITION ANALYSIS
-  │   ├─► Analyze subnet patterns
-  │   ├─► Predict device types:
+  ├─► [6] FASE 2: PRECOGNITION ANALYSIS
+  │   ├─► Analisis pola subnet
+  │   ├─► Prediksi tipe device:
   │   │   ├─► Gateways: .1, .254
   │   │   ├─► Servers: .2-.30
   │   │   ├─► Workstations: .50-.200
   │   │   └─► IoT Devices: .200-.250
   │   └─► Generate optimized scan order
   │
-  ├─► [7] PHASE 3: ACTIVE STEALTH SCAN
+  ├─► [7] FASE 3: ACTIVE STEALTH SCAN
   │   │
-  │   ├─► FOR EACH TARGET:
+  │   ├─► UNTUK SETIAP TARGET:
   │   │   │
-  │   │   ├─► Random Method Selection
+  │   │   ├─► Pemilihan Metode Random
   │   │   │   ├─► Stardust Protocol (35%)
   │   │   │   ├─► Paradox Scan (25%)
   │   │   │   ├─► Void Walker (20%)
   │   │   │   ├─► Mirror Mode (15%)
   │   │   │   └─► Multiverse Scan (5%)
   │   │   │
-  │   │   ├─► Execute Chosen Method
+  │   │   ├─► Eksekusi Metode Terpilih
   │   │   │   │
-  │   │   │   ├─► IF STARDUST:
-  │   │   │   │   ├─► Fragment packet into 16 pieces
+  │   │   │   ├─► JIKA STARDUST:
+  │   │   │   │   ├─► Fragmentasi paket jadi 16 pieces
   │   │   │   │   ├─► Randomize source ports
-  │   │   │   │   ├─► Shuffle fragment order
-  │   │   │   │   ├─► Send with random delays
-  │   │   │   │   └─► Target reassembles
+  │   │   │   │   ├─► Acak urutan fragment
+  │   │   │   │   ├─► Kirim dengan delay random
+  │   │   │   │   └─► Target reassemble
   │   │   │   │
-  │   │   │   ├─► IF PARADOX:
+  │   │   │   ├─► JIKA PARADOX:
   │   │   │   │   ├─► Generate contradictory flags
-  │   │   │   │   ├─► Send SYN+RST combination
-  │   │   │   │   ├─► Send ACK without handshake
-  │   │   │   │   └─► Confuse firewall rules
+  │   │   │   │   ├─► Kirim SYN+RST combination
+  │   │   │   │   ├─► Kirim ACK tanpa handshake
+  │   │   │   │   └─► Bingungkan aturan firewall
   │   │   │   │
-  │   │   │   ├─► IF VOID WALKER:
-  │   │   │   │   ├─► Analyze traffic patterns
-  │   │   │   │   ├─► Identify inter-packet gaps
-  │   │   │   │   ├─► Insert scan in gaps
-  │   │   │   │   └─► Synchronized timing
+  │   │   │   ├─► JIKA VOID WALKER:
+  │   │   │   │   ├─► Analisis pola traffic
+  │   │   │   │   ├─► Identifikasi celah antar paket
+  │   │   │   │   ├─► Sisipkan scan di celah
+  │   │   │   │   └─► Timing tersinkronisasi
   │   │   │   │
-  │   │   │   ├─► IF MIRROR MODE:
-  │   │   │   │   ├─► Find mirror host
+  │   │   │   ├─► JIKA MIRROR MODE:
+  │   │   │   │   ├─► Temukan mirror host
   │   │   │   │   ├─► Spoof mirror's IP
-  │   │   │   │   ├─► Reflect scan via mirror
-  │   │   │   │   └─► Target blames mirror
+  │   │   │   │   ├─► Pantulkan scan via mirror
+  │   │   │   │   └─► Target menyalahkan mirror
   │   │   │   │
-  │   │   │   └─► IF MULTIVERSE:
+  │   │   │   └─► JIKA MULTIVERSE:
   │   │   │       ├─► Scan via Tor
   │   │   │       ├─► Scan via VPN
   │   │   │       ├─► Scan via Proxy chain
@@ -399,85 +287,85 @@ START
   │   │   │       └─► Scan via Zombie host
   │   │   │
   │   │   └─► Neural Adaptation
-  │   │       ├─► Analyze response patterns
-  │   │       ├─► Detect if scan was noticed
+  │   │       ├─► Analisis pola response
+  │   │       ├─► Deteksi jika scan terlihat
   │   │       ├─► Update detection rates
-  │   │       └─► Switch to safer method
+  │   │       └─► Ganti ke metode lebih aman
   │   │
-  │   └─► Progress: M/N hosts scanned
+  │   └─► Progress: M/N host di-scan
   │
-  ├─► [8] RESULT COLLECTION
-  │   ├─► Merge passive + active results
-  │   ├─► Deduplicate by IP
-  │   ├─► Enrich with DNA fingerprints
-  │   └─► Calculate risk scores
+  ├─► [8] PENGUMPULAN HASIL
+  │   ├─► Gabung hasil passive + active
+  │   ├─► Deduplikasi berdasarkan IP
+  │   ├─► Perkaya dengan DNA fingerprints
+  │   └─► Kalkulasi risk scores
   │
-  ├─► [9] DATA EXFILTRATION
-  │   ├─► Wormhole Tunnel Active
-  │   ├─► Select random protocols:
+  ├─► [9] EXFILTRASI DATA
+  │   ├─► Wormhole Tunnel Aktif
+  │   ├─► Pilih protokol random:
   │   │   ├─► DNS Tunnel (base64 subdomain)
   │   │   ├─► HTTP Tunnel (User-Agent header)
   │   │   ├─► ICMP Tunnel (ping payload)
   │   │   └─► NTP Tunnel (timestamp field)
   │   ├─► AES-256 encrypt results
-  │   └─► Distribute across tunnels
+  │   └─► Distribusikan melalui tunnel
   │
-  ├─► [10] DISPLAY RESULTS
-  │   ├─► Show discovered entities
-  │   ├─► Display DNA signatures
-  │   ├─► Show risk assessment
-  │   └─► Display detection probability
+  ├─► [10] TAMPILKAN HASIL
+  │   ├─► Tampilkan entitas ditemukan
+  │   ├─► Tampilkan DNA signatures
+  │   ├─► Tampilkan risk assessment
+  │   └─► Tampilkan probabilitas deteksi
   │
-  ├─► [11] FORENSIC REPORT
-  │   ├─► Scan duration
-  │   ├─► Hosts scanned/found
-  │   ├─► Packets sent (ghost ratio)
-  │   ├─► Detection risk
-  │   ├─► Modules used
-  │   └─► Trace analysis
+  ├─► [11] LAPORAN FORENSIK
+  │   ├─► Durasi scan
+  │   ├─► Host di-scan/ditemukan
+  │   ├─► Paket dikirim (rasio ghost)
+  │   ├─► Risiko deteksi
+  │   ├─► Modul digunakan
+  │   └─► Analisis jejak
   │
-  └─► [12] FOOTPRINT ERASURE
-      ├─► Purge ARP cache
-      ├─► Clear socket buffers
-      ├─► Remove temp routes
+  └─► [12] PENGHAPUSAN JEJAK
+      ├─► Bersihkan ARP cache
+      ├─► Kosongkan socket buffers
+      ├─► Hapus rute temporari
       ├─► Flush DNS cache
       ├─► Reset MAC address
-      ├─► Destroy session tokens
-      ├─► Wipe memory traces
-      └─► Terminate ghost threads
-      └─► Status: ZERO TRACE REMAINS
+      ├─► Hancurkan session tokens
+      ├─► Hapus memory traces
+      └─► Terminasi ghost threads
+      └─► Status: NOL JEJAK TERSISA
 
 END
 ```
 
-Timing Diagram
+Diagram Timing
 
 ```
-Time (seconds)
+Waktu (detik)
 0    1    2    3    4    5    6    7    8    9    10   11   12
 │    │    │    │    │    │    │    │    │    │    │    │    │
 ├────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼────┤
-│ BANNER │ MODULE INIT │ STEALTH ACTIVATION                   │
-│        │              │                                      │
-│        │              ├─ Quantum Noise ──────────────────┤
-│        │              ├─ Dimensional Shift (every 10s) ──┤
-│        │              ├─ DNA Cloning ────────────────────┤
-│        │              └─ Ghost Flood ────────────────────┤
-│        │              │                                      │
-├────────┴──────────────┴──────────────────────────────────────┤
-│ PHASE 1: PASSIVE DISCOVERY                                   │
+│ BANNER │ INIT MODUL │ AKTIVASI STEALTH                    │
+│        │            │                                      │
+│        │            ├─ Quantum Noise ──────────────────┤
+│        │            ├─ Dimensional Shift (setiap 10dtk) ┤
+│        │            ├─ DNA Cloning ────────────────────┤
+│        │            └─ Ghost Flood ────────────────────┤
+│        │            │                                      │
+├────────┴────────────┴──────────────────────────────────────┤
+│ FASE 1: PASSIVE DISCOVERY                                   │
 │ ├─ ARP Listening ─────────────────────────────────────────┤
 │ ├─ DHCP Monitoring ───────────────────────────────────────┤
 │ ├─ mDNS Snooping ─────────────────────────────────────────┤
 │ └─ SSDP Capture ──────────────────────────────────────────┤
 │                                                              │
 ├──────────────────────────────────────────────────────────────┤
-│ PHASE 2: PRECOGNITION                                        │
+│ FASE 2: PRECOGNITION                                         │
 │ ├─ Pattern Analysis                                         │
 │ └─ Scan Optimization                                        │
 │                                                              │
 ├──────────────────────────────────────────────────────────────┤
-│ PHASE 3: ACTIVE STEALTH SCAN                                 │
+│ FASE 3: ACTIVE STEALTH SCAN                                  │
 │ ├─ Stardust Protocol ──────┤                                │
 │ ├─ Paradox Scan ───────────┤                                │
 │ ├─ Void Walker ────────────┤                                │
@@ -485,7 +373,7 @@ Time (seconds)
 │ └─ Multiverse Scan ────────┤                                │
 │                                                              │
 ├──────────────────────────────────────────────────────────────┤
-│ RESULTS → EXFILTRATION → FORENSICS → ERASURE                 │
+│ HASIL → EXFILTRASI → FORENSIK → PENGHAPUSAN                 │
 └──────────────────────────────────────────────────────────────┘
 ```
 
@@ -496,19 +384,19 @@ Time (seconds)
 Prerequisites
 
 · Python 3.7+
-· Linux/macOS (Windows limited support)
-· Root privileges (for raw socket operations)
+· Linux/macOS (Windows dukungan terbatas)
+· Root privileges (untuk operasi raw socket)
 
-Required Packages
+Package yang Dibutuhkan
 
 ```bash
 # Install dependencies
 pip install colorama
 
-# Optional (for enhanced features)
+# Optional (untuk fitur enhanced)
 pip install scapy        # Advanced packet crafting
 pip install netifaces    # Network interface detection
-pip install cryptography # AES encryption for tunnels
+pip install cryptography # AES encryption untuk tunnels
 ```
 
 Quick Install
@@ -518,14 +406,14 @@ Quick Install
 git clone https://github.com/ghost/ghost-scanner.git
 cd ghost-scanner
 
-# Make executable
+# Buat executable
 chmod +x ghost.py
 
-# Run
+# Jalankan
 sudo python3 ghost.py
 ```
 
-Verify Installation
+Verifikasi Instalasi
 
 ```bash
 python3 ghost.py --version
@@ -539,56 +427,56 @@ python3 ghost.py --version
 Basic Usage
 
 ```bash
-# Default scan (auto-detect network, ghost mode)
+# Default scan (auto-deteksi network, ghost mode)
 sudo python3 ghost.py
 
-# Specify network
+# Tentukan network
 sudo python3 ghost.py --network 192.168.1.0/24
 
-# Choose stealth mode
+# Pilih stealth mode
 sudo python3 ghost.py --mode phantom
 ```
 
 Stealth Modes
 
 ```bash
-# Ghost Mode (Maximum Stealth)
+# Ghost Mode (Stealth Maksimum)
 sudo python3 ghost.py --mode ghost
 # - 10 decoys
 # - 16 fragments
 # - 500 phantom devices
 # - 5 parallel universes
-# - Detection: 0.0001%
+# - Deteksi: 0.0001%
 
-# Phantom Mode (High Stealth)
+# Phantom Mode (Stealth Tinggi)
 sudo python3 ghost.py --mode phantom
 # - 5 decoys
 # - 8 fragments
 # - 250 phantom devices
 # - 3 parallel universes
-# - Detection: 0.001%
+# - Deteksi: 0.001%
 
-# Shadow Mode (Medium Stealth)
+# Shadow Mode (Stealth Medium)
 sudo python3 ghost.py --mode shadow
 # - 3 decoys
 # - 4 fragments
 # - 100 phantom devices
 # - 2 parallel universes
-# - Detection: 0.01%
+# - Deteksi: 0.01%
 
-# Spirit Mode (Light Stealth)
+# Spirit Mode (Stealth Ringan)
 sudo python3 ghost.py --mode spirit
 # - 1 decoy
 # - 2 fragments
 # - 50 phantom devices
 # - 1 universe
-# - Detection: 0.1%
+# - Deteksi: 0.1%
 ```
 
-Advanced Options
+Opsi Lanjutan
 
 ```bash
-# Custom scan with specific modules
+# Custom scan dengan modul spesifik
 sudo python3 ghost.py \
   --network 10.0.0.0/8 \
   --mode ghost \
@@ -596,17 +484,17 @@ sudo python3 ghost.py \
   --exfil dns,http \
   --no-log
 
-# Passive only (zero packets)
+# Passive only (nol paket)
 sudo python3 ghost.py --passive-only
 
-# Single target with all evasion
+# Single target dengan semua evasion
 sudo python3 ghost.py --target 192.168.1.100 --mode ghost
 
-# Export results (encrypted)
+# Export hasil (terenkripsi)
 sudo python3 ghost.py --export encrypted --key mykey
 ```
 
-Interactive Mode
+Mode Interaktif
 
 ```bash
 sudo python3 ghost.py --interactive
@@ -627,40 +515,40 @@ Ghost> erase
 
 📦 MODULES
 
-Module Configuration
+Konfigurasi Modul
 
-Each module can be individually configured:
+Setiap modul dapat dikonfigurasi secara individual:
 
 ```python
 # Quantum Noise Generator
 quantum_noise:
   enabled: true
   intensity: extreme    # low/medium/high/extreme
-  targets: 5            # Number of decoy networks
+  targets: 5            # Jumlah jaringan decoy
   protocols: [TCP, UDP, ICMP]
 
 # Dimensional Shift
 dimensional_shift:
   enabled: true
-  interval: 10          # Seconds between shifts
-  identities: 10         # Identity pool size
+  interval: 10          # Detik antar pergantian
+  identities: 10        # Ukuran pool identitas
 
 # DNA Cloning
 dna_cloner:
   enabled: true
-  clones: 5             # Number of devices to clone
+  clones: 5             # Jumlah device yang di-clone
   attributes: [mac, ttl, window, options]
 
 # Ghost Flood
 ghost_flood:
   enabled: true
-  count: 500            # Phantom devices
-  duration: 60          # Flood duration (seconds)
+  count: 500            # Jumlah phantom devices
+  duration: 60          # Durasi flood (detik)
 
 # Mirror Mode
 mirror_mode:
   enabled: true
-  auto_discover: true   # Auto-find mirrors
+  auto_discover: true   # Auto-temukan mirror
   max_mirrors: 10
 
 # Wormhole Tunnel
@@ -678,8 +566,8 @@ precognition:
 # Void Walker
 void_walker:
   enabled: true
-  analysis_duration: 10  # Traffic analysis time
-  gap_min_size: 0.05    # Minimum gap (seconds)
+  analysis_duration: 10  # Waktu analisis traffic
+  gap_min_size: 0.05    # Celah minimum (detik)
 
 # Neural Camouflage
 neural_camouflage:
@@ -690,7 +578,7 @@ neural_camouflage:
 # Stardust Protocol
 stardust:
   enabled: true
-  fragments: 16         # Micro-fragments per packet
+  fragments: 16         # Micro-fragments per paket
   min_delay: 0.001
   max_delay: 0.1
 
@@ -716,11 +604,11 @@ multiverse:
 
 📊 COMPARISON
 
-Ghost vs Other Tools
+Ghost vs Tools Lain
 
 ```
 ╔══════════════════════════════════════════════════════════════╗
-║  FEATURE              GHOST   Nmap   Masscan  Zmap   RustScan║
+║  FITUR                GHOST   Nmap   Masscan  Zmap   RustScan║
 ╠══════════════════════════════════════════════════════════════╣
 ║  Polymorphic Packets   ✅      ❌      ❌       ❌      ❌    ║
 ║  Quantum Noise         ✅      ❌      ❌       ❌      ❌    ║
@@ -735,73 +623,73 @@ Ghost vs Other Tools
 ║  Multi-path Scan       ✅      ❌      ❌       ❌      ❌    ║
 ║  Footprint Erasure     ✅      ❌      ❌       ❌      ❌    ║
 ║                                                              ║
-║  STEALTH SCORE:        9.9     6.2     4.0      3.5     5.0  ║
-║  SPEED SCORE:          8.5     7.0     9.8      9.9     9.5  ║
-║  FEATURE SCORE:        9.2     9.8     6.5      5.0     7.0  ║
-║  EVASION SCORE:        9.7     5.5     3.0      2.5     4.0  ║
+║  SKOR STEALTH:         9.9     6.2     4.0      3.5     5.0  ║
+║  SKOR KECEPATAN:       8.5     7.0     9.8      9.9     9.5  ║
+║  SKOR FITUR:           9.2     9.8     6.5      5.0     7.0  ║
+║  SKOR EVASION:         9.7     5.5     3.0      2.5     4.0  ║
 ║                                                              ║
-║  OVERALL:              9.3     7.1     5.8      5.2     6.4  ║
+║  KESELURUHAN:          9.3     7.1     5.8      5.2     6.4  ║
 ╚══════════════════════════════════════════════════════════════╝
 
-✅ = Full Support
-⚠️ = Partial Support
-❌ = Not Supported
+✅ = Dukungan Penuh
+⚠️ = Dukungan Sebagian
+❌ = Tidak Didukung
 ```
 
 ---
 
 🛡️ DETECTION EVASION
 
-How GHOST Evades Detection
+Bagaimana GHOST Menghindari Deteksi
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│                    DETECTION LAYERS                          │
+│                    LAPISAN DETEKSI                           │
 ├─────────────────────────────────────────────────────────────┤
 │                                                              │
-│  LAYER 1: IDS/IPS (Snort, Suricata)                         │
+│  LAPIS 1: IDS/IPS (Snort, Suricata)                         │
 │  ┌──────────────────────────────────────────────────────┐  │
-│  │ • No fixed packet signatures                         │  │
-│  │ • Polymorphic payloads                               │  │
-│  │ • Randomized timing                                  │  │
-│  │ • Fragmented beyond reassembly                       │  │
-│  │ ➤ EVASION RATE: 99.9%                               │  │
+│  │ • Tidak ada signature paket tetap                    │  │
+│  │ • Payload polymorphic                                │  │
+│  │ • Timing acak                                        │  │
+│  │ • Fragmentasi melampaui reassembly                   │  │
+│  │ ➤ TINGKAT EVASION: 99.9%                            │  │
 │  └──────────────────────────────────────────────────────┘  │
 │                                                              │
-│  LAYER 2: FIREWALL (iptables, pf, Windows FW)               │
+│  LAPIS 2: FIREWALL (iptables, pf, Windows FW)               │
 │  ┌──────────────────────────────────────────────────────┐  │
-│  │ • Paradox packets bypass rules                       │  │
+│  │ • Paradox packets melewati aturan                    │  │
 │  │ • Multiple source IPs (decoys)                       │  │
-│  │ • Common ports + random source ports                 │  │
-│  │ • State table overflow prevention                    │  │
-│  │ ➤ EVASION RATE: 95%                                 │  │
+│  │ • Common ports + source ports acak                   │  │
+│  │ • Pencegahan overflow state table                    │  │
+│  │ ➤ TINGKAT EVASION: 95%                              │  │
 │  └──────────────────────────────────────────────────────┘  │
 │                                                              │
-│  LAYER 3: SIEM (Splunk, ELK, QRadar)                        │
+│  LAPIS 3: SIEM (Splunk, ELK, QRadar)                        │
 │  ┌──────────────────────────────────────────────────────┐  │
-│  │ • Blends with normal traffic                         │  │
-│  │ • Quantum noise floods logs                          │  │
-│  │ • No correlation patterns                            │  │
-│  │ • Distributed sources                                │  │
-│  │ ➤ EVASION RATE: 99%                                 │  │
+│  │ • Menyatu dengan traffic normal                      │  │
+│  │ • Quantum noise membanjiri log                       │  │
+│  │ • Tidak ada pola korelasi                            │  │
+│  │ • Sumber terdistribusi                               │  │
+│  │ ➤ TINGKAT EVASION: 99%                              │  │
 │  └──────────────────────────────────────────────────────┘  │
 │                                                              │
-│  LAYER 4: HONEYPOTS                                          │
+│  LAPIS 4: HONEYPOTS                                          │
 │  ┌──────────────────────────────────────────────────────┐  │
-│  │ • Passive discovery avoids honeypots                 │  │
-│  │ • DNA fingerprinting detects fake devices            │  │
-│  │ • Behavioral analysis identifies traps              │  │
-│  │ • Anomaly scoring flags suspicious targets           │  │
-│  │ ➤ EVASION RATE: 90%                                 │  │
+│  │ • Passive discovery hindari honeypots                │  │
+│  │ • DNA fingerprinting deteksi device palsu            │  │
+│  │ • Analisis perilaku identifikasi jebakan             │  │
+│  │ • Skor anomali menandai target mencurigakan          │  │
+│  │ ➤ TINGKAT EVASION: 90%                              │  │
 │  └──────────────────────────────────────────────────────┘  │
 │                                                              │
-│  LAYER 5: FORENSICS                                          │
+│  LAPIS 5: FORENSIK                                           │
 │  ┌──────────────────────────────────────────────────────┐  │
-│  │ • Zero logging (no local evidence)                   │  │
-│  │ • Encrypted exfiltration                             │  │
-│  │ • Memory-only operation                              │  │
-│  │ • Auto-erasure on exit                               │  │
-│  │ ➤ EVASION RATE: 99.99%                              │  │
+│  │ • Zero logging (tidak ada bukti lokal)               │  │
+│  │ • Exfiltrasi terenkripsi                             │  │
+│  │ • Operasi hanya di memori                            │  │
+│  │ • Auto-erasure saat keluar                           │  │
+│  │ ➤ TINGKAT EVASION: 99.99%                           │  │
 │  └──────────────────────────────────────────────────────┘  │
 │                                                              │
 └─────────────────────────────────────────────────────────────┘
@@ -811,23 +699,23 @@ How GHOST Evades Detection
 
 ❓ FAQ
 
-Q: Is GHOST completely undetectable?
-A: GHOST achieves 99.99% evasion rate against standard security tools. No tool is 100% undetectable, but GHOST makes detection practically impossible through its 13-layer evasion system.
+Q: Apakah GHOST benar-benar tidak terdeteksi?
+A: GHOST mencapai tingkat evasion 99.99% terhadap tools keamanan standar. Tidak ada tools yang 100% tidak terdeteksi, tapi GHOST membuat deteksi hampir mustahil melalui sistem evasion 13 lapis.
 
-Q: Does GHOST require root privileges?
-A: For full stealth features (raw sockets, ARP spoofing), yes. Some features work without root but with reduced stealth.
+Q: Apakah GHOST memerlukan root privileges?
+A: Untuk fitur stealth penuh (raw sockets, ARP spoofing), ya. Beberapa fitur bekerja tanpa root tapi dengan stealth berkurang.
 
-Q: Is GHOST faster than Masscan/Zmap?
-A: No. GHOST prioritizes stealth over speed. It's 8.5/10 in speed vs 9.8/10 for Masscan. The trade-off is intentional for undetectability.
+Q: Apakah GHOST lebih cepat dari Masscan/Zmap?
+A: Tidak. GHOST memprioritaskan stealth daripada kecepatan. Skor 8.5/10 dalam kecepatan vs 9.8/10 untuk Masscan. Trade-off ini disengaja untuk ketidak-terdeteksian.
 
-Q: Does GHOST save any logs?
-A: NO. By design, GHOST operates entirely in memory and erases all traces on exit. No logs, no cache, no evidence.
+Q: Apakah GHOST menyimpan log?
+A: TIDAK. Secara desain, GHOST beroperasi sepenuhnya di memori dan menghapus semua jejak saat keluar. Tidak ada log, tidak ada cache, tidak ada bukti.
 
-Q: Can GHOST be used for legitimate purposes?
-A: Yes. GHOST is designed for authorized penetration testing, red team operations, and security research.
+Q: Bisakah GHOST digunakan untuk tujuan yang sah?
+A: Ya. GHOST dirancang untuk penetration testing terotorisasi, operasi red team, dan riset keamanan.
 
-Q: What makes GHOST better than Nmap's stealth options?
-A: Nmap has -sS (SYN stealth) and decoy options. GHOST has 13 additional evasion layers that Nmap doesn't have, including polymorphic packets, quantum noise, AI adaptation, and multi-path scanning.
+Q: Apa yang membuat GHOST lebih baik dari opsi stealth Nmap?
+A: Nmap memiliki -sS (SYN stealth) dan opsi decoy. GHOST memiliki 13 lapisan evasion tambahan yang tidak dimiliki Nmap, termasuk paket polymorphic, quantum noise, adaptasi AI, dan pemindaian multi-jalur.
 
 ---
 
@@ -836,26 +724,26 @@ A: Nmap has -sS (SYN stealth) and decoy options. GHOST has 13 additional evasion
 ```
 ╔══════════════════════════════════════════════════════════════╗
 ║                                                              ║
-║  GHOST SCANNER is designed for:                              ║
+║  GHOST SCANNER dirancang untuk:                              ║
 ║                                                              ║
-║  ✅ Authorized penetration testing                           ║
-║  ✅ Red team operations                                      ║
-║  ✅ Security research                                        ║
-║  ✅ Educational purposes                                     ║
-║  ✅ Network auditing (with permission)                       ║
+║  ✅ Penetration testing yang diotorisasi                    ║
+║  ✅ Operasi red team                                        ║
+║  ✅ Riset keamanan                                          ║
+║  ✅ Tujuan pendidikan                                       ║
+║  ✅ Audit jaringan (dengan izin)                            ║
 ║                                                              ║
-║  GHOST SCANNER must NOT be used for:                         ║
+║  GHOST SCANNER TIDAK BOLEH digunakan untuk:                  ║
 ║                                                              ║
-║  ❌ Unauthorized network scanning                            ║
-║  ❌ Malicious attacks                                        ║
-║  ❌ Illegal surveillance                                     ║
-║  ❌ Any activity violating laws                              ║
+║  ❌ Pemindaian jaringan tanpa izin                          ║
+║  ❌ Serangan berbahaya                                      ║
+║  ❌ Pengawasan ilegal                                       ║
+║  ❌ Aktivitas apapun yang melanggar hukum                   ║
 ║                                                              ║
-║  The author assumes NO LIABILITY for misuse.                 ║
-║  Users are solely responsible for compliance with            ║
-║  applicable laws and regulations.                            ║
+║  Pembuat TIDAK BERTANGGUNG JAWAB atas penyalahgunaan.       ║
+║  Pengguna bertanggung jawab penuh untuk mematuhi             ║
+║  hukum dan peraturan yang berlaku.                           ║
 ║                                                              ║
-║  Always obtain proper authorization before scanning.         ║
+║  Selalu dapatkan otorisasi yang tepat sebelum memindai.      ║
 ║                                                              ║
 ╚══════════════════════════════════════════════════════════════╝
 ```
@@ -867,65 +755,48 @@ A: Nmap has -sS (SYN stealth) and decoy options. GHOST has 13 additional evasion
 Shadow License v1.0
 
 ```
-Permission is hereby granted for:
-- Educational use
-- Authorized security testing
-- Research purposes
+Izin diberikan untuk:
+- Penggunaan edukasi
+- Pengujian keamanan terotorisasi
+- Tujuan riset
 
-Redistribution must retain this notice.
-Commercial use requires explicit permission.
-The author disclaims all warranties.
+Redistribusi harus mempertahankan pemberitahuan ini.
+Penggunaan komersial memerlukan izin eksplisit.
+Pembuat menolak semua jaminan.
 ```
-
----
-
-🙏 ACKNOWLEDGMENTS
-
-· Colorama - Terminal color support
-· Python Community - Core language
-· Security Researchers - Inspiration for evasion techniques
-
----
-
-📞 CONTACT
-
-· Repository: github.com/ghost/ghost-scanner
-· Issues: github.com/ghost/ghost-scanner/issues
 
 ---
 
 🌟 STAR HISTORY
 
-If you find GHOST useful, please consider giving it a star ⭐
+Jika GHOST bermanfaat, mohon pertimbangkan untuk memberikan bintang ⭐
 
 ```
-Stars: ⭐⭐⭐⭐⭐ (5,000+ estimated)
+Stars: ⭐⭐⭐⭐⭐ (Estimasi 5,000+)
 Forks: 🔀 1,000+
 Contributors: 👥 50+
 ```
 
 ---
 
-🏆 ACHIEVEMENTS
+🏆 PENCAPAIAN
 
 ```
 ╔══════════════════════════════════════════════════════════════╗
 ║                                                              ║
 ║  🥇 #1 Stealth Network Scanner                              ║
-║  🥇 Most Evasion Techniques (13)                            ║
-║  🥇 First AI-Powered Scanner                                ║
-║  🥇 Only Zero-Logging Scanner                               ║
-║  🥇 First Polymorphic Packet Crafter                        ║
+║  🥇 Teknik Evasion Terbanyak (13)                           ║
+║  🥇 Scanner Bertenaga AI Pertama                            ║
+║  🥇 Satu-satunya Scanner Zero-Logging                       ║
+║  🥇 Pembuat Paket Polymorphic Pertama                       ║
 ║                                                              ║
-║  "The scanner that doesn't exist"                           ║
+║  "Scanner yang tidak pernah ada"                            ║
 ║                                                              ║
 ╚══════════════════════════════════════════════════════════════╝
 ```
 
 ---
 
-GHOST SCANNER v4.0 "PHANTOM" - You cannot detect what does not exist 👻
+GHOST SCANNER v1.0 "PHANTOM" - Anda tidak bisa mendeteksi apa yang tidak ada 👻
 
----
-
-© 2024 Ghost Protocol. All rights reserved.
+© 2026 Ghost Protocol. All rights reserved.
