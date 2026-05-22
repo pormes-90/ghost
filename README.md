@@ -633,6 +633,632 @@ PENCAPAIAN
 · Pembuat Paket Polymorphic Pertama
 
 ---
+👻 GHOST SCANNER v4.0 "PHANTOM"
+
+FULL COMMAND REFERENCE
+
+---
+
+📋 DAFTAR PERINTAH LENGKAP
+
+1. BASIC COMMANDS
+
+```bash
+# Menjalankan scanner dengan mode default (auto-deteksi network, ghost mode)
+sudo python3 ghost.py
+
+# Menampilkan versi
+python3 ghost.py --version
+python3 ghost.py -v
+
+# Menampilkan bantuan
+python3 ghost.py --help
+python3 ghost.py -h
+```
+
+---
+
+2. NETWORK TARGETING
+
+```bash
+# Scan network spesifik (CIDR notation)
+sudo python3 ghost.py --network 192.168.1.0/24
+sudo python3 ghost.py -n 10.0.0.0/8
+sudo python3 ghost.py -n 172.16.0.0/12
+
+# Scan single IP
+sudo python3 ghost.py --target 192.168.1.100
+sudo python3 ghost.py -t 10.0.0.1
+
+# Scan multiple IPs
+sudo python3 ghost.py --target 192.168.1.1,192.168.1.2,192.168.1.3
+sudo python3 ghost.py -t 10.0.0.1-10.0.0.10
+
+# Scan dari file
+sudo python3 ghost.py --target-file targets.txt
+sudo python3 ghost.py -T /path/to/targets.txt
+```
+
+---
+
+3. STEALTH MODES
+
+```bash
+# Ghost Mode (Maximum Stealth)
+sudo python3 ghost.py --mode ghost
+# - 10 decoys, 16 fragments, 500 phantoms, 5 universes
+# - Detection probability: 0.0001%
+# - Scan speed: Slow (prioritaskan stealth)
+
+# Phantom Mode (High Stealth)
+sudo python3 ghost.py --mode phantom
+# - 5 decoys, 8 fragments, 250 phantoms, 3 universes
+# - Detection probability: 0.001%
+# - Scan speed: Medium
+
+# Shadow Mode (Medium Stealth)
+sudo python3 ghost.py --mode shadow
+# - 3 decoys, 4 fragments, 100 phantoms, 2 universes
+# - Detection probability: 0.01%
+# - Scan speed: Fast
+
+# Spirit Mode (Light Stealth)
+sudo python3 ghost.py --mode spirit
+# - 1 decoy, 2 fragments, 50 phantoms, 1 universe
+# - Detection probability: 0.1%
+# - Scan speed: Very Fast
+
+# Custom Mode (Manual Configuration)
+sudo python3 ghost.py --mode custom \
+  --decoys 7 \
+  --fragments 12 \
+  --phantoms 300 \
+  --universes 4
+```
+
+---
+
+4. MODULE SELECTION
+
+```bash
+# Aktifkan modul spesifik
+sudo python3 ghost.py --modules quantum_noise,dna_cloning,multiverse
+sudo python3 ghost.py -m quantum_noise,ghost_flood,stardust
+
+# Nonaktifkan modul spesifik
+sudo python3 ghost.py --disable-modules ghost_flood,mirror_mode
+sudo python3 ghost.py -D ghost_flood
+
+# Aktifkan semua modul
+sudo python3 ghost.py --all-modules
+sudo python3 ghost.py -A
+
+# Passive only (hanya Echo Locator, zero packets)
+sudo python3 ghost.py --passive-only
+sudo python3 ghost.py -P
+
+# Active only (skip passive discovery)
+sudo python3 ghost.py --active-only
+sudo python3 ghost.py -X
+```
+
+---
+
+5. SCAN TECHNIQUES
+
+```bash
+# Pilih teknik scan spesifik
+sudo python3 ghost.py --technique stardust
+sudo python3 ghost.py --technique paradox
+sudo python3 ghost.py --technique void
+sudo python3 ghost.py --technique mirror
+sudo python3 ghost.py --technique multiverse
+
+# Kombinasi teknik
+sudo python3 ghost.py --technique stardust,paradox,multiverse
+
+# Random technique per host (default)
+sudo python3 ghost.py --technique random
+```
+
+---
+
+6. PORT CONFIGURATION
+
+```bash
+# Port spesifik
+sudo python3 ghost.py --ports 22,80,443,445,3306,3389
+sudo python3 ghost.py -p 1-1000
+
+# Port range
+sudo python3 ghost.py --ports 1-65535
+sudo python3 ghost.py -p 20-1024
+
+# Common ports only (default)
+sudo python3 ghost.py --ports common
+
+# Top ports
+sudo python3 ghost.py --ports top-100
+sudo python3 ghost.py --ports top-1000
+
+# Skip port scan (host discovery only)
+sudo python3 ghost.py --no-ports
+sudo python3 ghost.py -N
+```
+
+---
+
+7. TIMING & PERFORMANCE
+
+```bash
+# Set timing template
+sudo python3 ghost.py --timing paranoid   # 0 (slowest, most stealth)
+sudo python3 ghost.py --timing sneaky     # 1
+sudo python3 ghost.py --timing polite     # 2
+sudo python3 ghost.py --timing normal     # 3 (default)
+sudo python3 ghost.py --timing aggressive # 4
+sudo python3 ghost.py --timing insane     # 5 (fastest, least stealth)
+
+# Custom timing
+sudo python3 ghost.py --min-delay 0.001 --max-delay 0.1
+sudo python3 ghost.py --min-rtt 0.01 --max-rtt 1.0
+sudo python3 ghost.py --timeout 2.0
+
+# Parallel threads
+sudo python3 ghost.py --threads 50
+sudo python3 ghost.py --threads 200
+
+# Rate limiting (packets per second)
+sudo python3 ghost.py --rate 10
+sudo python3 ghost.py --rate 1000
+```
+
+---
+
+8. EVASION OPTIONS
+
+```bash
+# Decoy configuration
+sudo python3 ghost.py --decoys 10
+sudo python3 ghost.py --decoy-ips 10.0.0.1,10.0.0.2,10.0.0.3
+
+# Fragment configuration
+sudo python3 ghost.py --fragments 16
+sudo python3 ghost.py --fragment-size 8
+
+# Phantom device count
+sudo python3 ghost.py --phantoms 500
+sudo python3 ghost.py --phantom-duration 120
+
+# Quantum noise level
+sudo python3 ghost.py --noise extreme
+sudo python3 ghost.py --noise high
+sudo python3 ghost.py --noise medium
+sudo python3 ghost.py --noise low
+sudo python3 ghost.py --noise off
+
+# MAC spoofing
+sudo python3 ghost.py --spoof-mac 00:11:22:33:44:55
+sudo python3 ghost.py --spoof-mac random
+sudo python3 ghost.py --spoof-mac clone:192.168.1.1
+
+# TTL manipulation
+sudo python3 ghost.py --ttl 64
+sudo python3 ghost.py --ttl random
+sudo python3 ghost.py --ttl mimic:192.168.1.1
+
+# Source port manipulation
+sudo python3 ghost.py --source-port 12345
+sudo python3 ghost.py --source-port random
+sudo python3 ghost.py --source-port range:49152-65535
+```
+
+---
+
+9. EXFILTRATION OPTIONS
+
+```bash
+# Wormhole tunnel protocols
+sudo python3 ghost.py --exfil dns
+sudo python3 ghost.py --exfil http
+sudo python3 ghost.py --exfil icmp
+sudo python3 ghost.py --exfil ntp
+sudo python3 ghost.py --exfil dns,http,icmp
+
+# Exfiltration encryption
+sudo python3 ghost.py --exfil-encrypt aes256
+sudo python3 ghost.py --exfil-key mysecretkey
+sudo python3 ghost.py --exfil-no-encrypt
+
+# Exfiltration target
+sudo python3 ghost.py --exfil-server 10.0.0.100
+sudo python3 ghost.py --exfil-domain ghost.local
+sudo python3 ghost.py --exfil-url http://collector.local/data
+
+# Disable exfiltration (local only)
+sudo python3 ghost.py --no-exfil
+```
+
+---
+
+10. OUTPUT & EXPORT
+
+```bash
+# Export formats
+sudo python3 ghost.py --output json
+sudo python3 ghost.py --output csv
+sudo python3 ghost.py --output html
+sudo python3 ghost.py --output txt
+sudo python3 ghost.py --output all
+sudo python3 ghost.py -o json
+
+# Output file
+sudo python3 ghost.py --output-file scan_results.json
+sudo python3 ghost.py -f /path/to/results.json
+
+# Encrypted output
+sudo python3 ghost.py --output encrypted
+sudo python3 ghost.py --output-key mypassword
+
+# No output (zero logging - default)
+sudo python3 ghost.py --no-output
+sudo python3 ghost.py -Q
+
+# Verbose output
+sudo python3 ghost.py --verbose
+sudo python3 ghost.py -V
+
+# Debug mode
+sudo python3 ghost.py --debug
+sudo python3 ghost.py -d
+```
+
+---
+
+11. DISPLAY OPTIONS
+
+```bash
+# Tampilan hasil
+sudo python3 ghost.py --show all
+sudo python3 ghost.py --show hosts
+sudo python3 ghost.py --show ports
+sudo python3 ghost.py --show os
+sudo python3 ghost.py --show risk
+
+# Format tampilan
+sudo python3 ghost.py --display table
+sudo python3 ghost.py --display list
+sudo python3 ghost.py --display json
+sudo python3 ghost.py --display minimal
+
+# Color mode
+sudo python3 ghost.py --color on
+sudo python3 ghost.py --color off
+sudo python3 ghost.py --color auto
+
+# Silent mode
+sudo python3 ghost.py --silent
+sudo python3 ghost.py -s
+
+# Progress bar
+sudo python3 ghost.py --progress on
+sudo python3 ghost.py --progress off
+```
+
+---
+
+12. INTERACTIVE MODE
+
+```bash
+# Masuk mode interaktif
+sudo python3 ghost.py --interactive
+sudo python3 ghost.py -i
+
+# Commands dalam mode interaktif:
+Ghost> help                    # Tampilkan bantuan
+Ghost> set network 192.168.1.0/24   # Set target network
+Ghost> set target 10.0.0.1          # Set single target
+Ghost> set mode ghost               # Set stealth mode
+Ghost> set ports 22,80,443          # Set port range
+Ghost> set threads 100              # Set thread count
+Ghost> set timeout 2.0              # Set timeout
+Ghost> set output json              # Set output format
+Ghost> enable quantum_noise         # Enable module
+Ghost> disable ghost_flood          # Disable module
+Ghost> show config                  # Show configuration
+Ghost> show modules                 # Show module status
+Ghost> show targets                 # Show target list
+Ghost> scan                         # Start scan
+Ghost> stop                         # Stop scan
+Ghost> show results                 # Show results
+Ghost> show hosts                   # Show discovered hosts
+Ghost> show ports [ip]              # Show ports for host
+Ghost> show os [ip]                 # Show OS for host
+Ghost> show risk [ip]               # Show risk score
+Ghost> show forensics               # Show scan statistics
+Ghost> export json results.json    # Export results
+Ghost> erase                        # Erase all traces
+Ghost> exit                         # Exit interactive mode
+Ghost> quit                         # Exit interactive mode
+```
+
+---
+
+13. ADVANCED SCENARIOS
+
+```bash
+# Red Team Operation (Maximum Stealth)
+sudo python3 ghost.py \
+  --network 10.0.0.0/8 \
+  --mode ghost \
+  --all-modules \
+  --timing paranoid \
+  --decoys 10 \
+  --fragments 16 \
+  --phantoms 500 \
+  --noise extreme \
+  --exfil dns,http,icmp \
+  --exfil-encrypt aes256 \
+  --exfil-domain ghost.local \
+  --no-output \
+  --spoof-mac random \
+  --ttl random \
+  --source-port random \
+  --progress off \
+  --silent
+
+# Pentest Authorized (Balanced)
+sudo python3 ghost.py \
+  --network 192.168.1.0/24 \
+  --mode phantom \
+  --modules quantum_noise,dna_cloning,stardust,multiverse \
+  --timing polite \
+  --ports 1-1000 \
+  --output json \
+  --output-file pentest_results.json \
+  --verbose
+
+# Internal Network Audit (Fast)
+sudo python3 ghost.py \
+  --network 172.16.0.0/12 \
+  --mode shadow \
+  --timing normal \
+  --ports top-1000 \
+  --output csv \
+  --output-file audit_results.csv \
+  --show hosts,ports,os
+
+# Passive Reconnaissance Only
+sudo python3 ghost.py \
+  --network 192.168.0.0/16 \
+  --passive-only \
+  --modules echo_locator,precognition \
+  --timing polite \
+  --output txt \
+  --show hosts
+
+# Single Host Deep Scan
+sudo python3 ghost.py \
+  --target 10.0.0.50 \
+  --mode ghost \
+  --all-modules \
+  --ports 1-65535 \
+  --technique stardust,paradox,multiverse \
+  --timing sneaky \
+  --verbose \
+  --show all
+
+# Internet-facing Scan (via proxies)
+sudo python3 ghost.py \
+  --target external-server.com \
+  --mode ghost \
+  --multiverse-only \
+  --universes tor,vpn,proxy \
+  --exfil dns \
+  --no-output \
+  --silent
+```
+
+---
+
+14. SCRIPTING & AUTOMATION
+
+```bash
+# Scan dan simpan hasil
+sudo python3 ghost.py -n 192.168.1.0/24 -o json -f scan.json
+
+# Baca target dari stdin
+cat targets.txt | sudo python3 ghost.py --target-stdin
+
+# Pipe hasil ke tool lain
+sudo python3 ghost.py -n 192.168.1.0/24 -o json -Q | jq '.hosts[] | select(.ports | length > 0)'
+
+# Cron job (scan berkala)
+0 2 * * * sudo /usr/local/bin/ghost.py -n 192.168.1.0/24 -m shadow -o csv -f /var/log/ghost/daily.csv -Q
+
+# Parallel scan multiple subnets
+for subnet in 192.168.1.0/24 192.168.2.0/24 192.168.3.0/24; do
+  sudo python3 ghost.py -n $subnet -m phantom -o json -f "scan_${subnet//\//_}.json" &
+done
+wait
+
+# Integrasi dengan tools lain
+sudo python3 ghost.py -n 10.0.0.0/24 -o json -Q | \
+  python3 -c "import sys,json; [print(h['ip']) for h in json.load(sys.stdin)['hosts']]" | \
+  xargs -I{} nmap -sV {}
+```
+
+---
+
+15. CONFIGURATION FILE
+
+```bash
+# Gunakan config file
+sudo python3 ghost.py --config ghost.conf
+sudo python3 ghost.py -c /etc/ghost/config.yaml
+
+# Generate default config
+python3 ghost.py --generate-config > ghost.conf
+
+# Contoh config file (ghost.conf):
+```
+
+```yaml
+# Ghost Scanner Configuration
+version: "4.0"
+mode: ghost
+
+network:
+  target: 192.168.1.0/24
+  # target: 10.0.0.1
+  # target_file: targets.txt
+
+stealth:
+  mode: ghost
+  decoys: 10
+  fragments: 16
+  phantoms: 500
+  universes: 5
+  
+modules:
+  quantum_noise: true
+  dimensional_shift: true
+  dna_cloning: true
+  ghost_flood: true
+  mirror_mode: true
+  wormhole_tunnel: true
+  precognition: true
+  void_walker: true
+  neural_camouflage: true
+  stardust: true
+  echo_locator: true
+  paradox_scan: true
+  multiverse: true
+
+scan:
+  ports: [22, 80, 443, 445, 3306, 3389, 8080, 8443]
+  # ports: "1-1000"
+  # ports: "top-100"
+  technique: random
+  timing: paranoid
+  
+evasion:
+  noise_level: extreme
+  spoof_mac: random
+  ttl: random
+  source_port: random
+  min_delay: 0.001
+  max_delay: 0.1
+  
+exfiltration:
+  enabled: true
+  protocols: [dns, http, icmp]
+  encryption: aes256
+  domain: ghost.local
+  # server: 10.0.0.100
+  
+output:
+  format: json
+  file: scan_results.json
+  encrypted: true
+  verbose: false
+  silent: true
+  no_log: true
+  
+display:
+  color: on
+  progress: off
+  show: [hosts, ports, os, risk]
+```
+
+---
+
+16. ENVIRONMENT VARIABLES
+
+```bash
+# Set environment variables
+export GHOST_MODE=ghost
+export GHOST_NETWORK=192.168.1.0/24
+export GHOST_STEALTH_LEVEL=extreme
+export GHOST_OUTPUT_DIR=/var/log/ghost
+export GHOST_NO_LOG=1
+
+# Run dengan environment variables
+sudo -E python3 ghost.py
+```
+
+---
+
+17. ALIASES (UNTUK .bashrc/.zshrc)
+
+```bash
+# Ghost aliases
+alias ghost='sudo python3 /opt/ghost/ghost.py'
+alias ghost-scan='ghost --mode ghost --all-modules'
+alias ghost-passive='ghost --passive-only'
+alias ghost-quick='ghost --mode shadow --ports top-100'
+alias ghost-deep='ghost --mode ghost --ports 1-65535 --all-modules'
+alias ghost-stealth='ghost --mode ghost --timing paranoid --no-output --silent'
+```
+
+---
+
+18. ERROR HANDLING & DEBUG
+
+```bash
+# Debug mode
+sudo python3 ghost.py --debug
+sudo python3 ghost.py --debug --verbose
+
+# Traceback on error
+sudo python3 ghost.py --traceback
+
+# Dry run (simulasi tanpa scan)
+sudo python3 ghost.py --dry-run
+
+# Validate config only
+sudo python3 ghost.py --validate
+
+# Test modules
+sudo python3 ghost.py --test-modules
+
+# Check permissions
+sudo python3 ghost.py --check-permissions
+
+# Show capabilities
+sudo python3 ghost.py --capabilities
+```
+
+---
+
+📊 COMMAND REFERENCE TABLE
+
+Command Short Description
+--network -n Target network (CIDR)
+--target -t Single target IP
+--target-file -T File with targets
+--mode -M Stealth mode
+--modules -m Enable modules
+--disable-modules -D Disable modules
+--ports -p Port specification
+--timing  Timing template
+--threads  Thread count
+--timeout  Connection timeout
+--decoys  Decoy count
+--fragments  Fragment count
+--phantoms  Phantom count
+--noise  Noise level
+--exfil  Exfiltration protocols
+--output -o Output format
+--output-file -f Output file
+--verbose -V Verbose output
+--silent -s Silent mode
+--debug -d Debug mode
+--interactive -i Interactive mode
+--help -h Show help
+--version -v Show version
+
+---
 
 GHOST SCANNER v1.0 "PHANTOM" - Anda tidak bisa mendeteksi apa yang tidak ada 👻
 
