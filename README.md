@@ -633,7 +633,6 @@ PENCAPAIAN
 · Pembuat Paket Polymorphic Pertama
 
 ---
-👻 GHOST SCANNER v4.0 "PHANTOM"
 
 FULL COMMAND REFERENCE
 
